@@ -1,0 +1,167 @@
+\RequirePackage{plautopatch}
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[fontsize=11pt, jafontsize=11pt, paper=a4paper, dvipdfmx]{jlreq}
+\usepackage{amsmath,amssymb}
+\usepackage{newtxtext,newtxmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\lstset{%
+ language={C++},
+ % backgroundcolor={\color[gray]{.95}},%
+ tabsize=2, % tab space width
+ showstringspaces=false, % don't mark spaces in strings
+ basicstyle={\ttfamily},%
+ %identifierstyle={\small},%
+ commentstyle={\itshape},%
+ keywordstyle={\bfseries},%
+ %ndkeywordstyle={\small},%
+ stringstyle={\ttfamily},
+ %frame={tb},
+ breaklines=true,
+ columns=[l]{fullflexible},%
+ % numbers=left,%
+ % numberstyle={\small},%
+ xrightmargin=0zw,%
+ %xleftmargin=3zw,%
+ stepnumber=1,
+ numbersep=1zw,%
+ lineskip=-0.5ex%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ここから上は（当面は）編集しないでください．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{レポート第  回 \\
+  「」}
+\author{氏 名：  大川 尚音 \\
+        科類・クラス：理科1類37組 \\
+        学生証番号：J4-231074 \\
+        E-mail: na-okawa04@g.ecc.u-tokyo.ac.jp}
+\date{\today}
+%
+\begin{document}
+\maketitle
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% 以下の文は，レポート提出時には削除してください．%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+今後，レポートは，本書式にしたがって作成するものとする．\underline{各課題ごとに}，
+プログラムリスト，実行結果，考察を書くこと．実際には，各課題ごとに
+ファイル内の section 部（\%\% ここから \%\% から，\%\% ここまで \%\% まで）
+をまるまるコピーペーストし，課題に合わせて編集するとよい．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{2.3節 例1}
+
+\subsection{実行結果}
+\label{sec:results1}
+
+\begin{quote}
+\begin{verbatim}
+% ./2_3_1
+-2.63255e+10
+\end{verbatim}
+\end{quote}
+%
+\subsection{考察}
+ここに考察を入力
+
+\section{2.3節 例2}
+
+\subsection{実行結果}
+\label{sec:results2}
+
+\begin{quote}
+\begin{verbatim}
+% ./2_3_2
+-2094914496
+\end{verbatim}
+\end{quote}
+%
+\subsection{考察}
+ここに考察を入力
+
+\section{2.4節 例1}
+
+\subsection{実行結果}
+\label{sec:results3}
+
+\begin{quote}
+\begin{verbatim}
+% ./2_4_1
+5.10064e+14
+\end{verbatim}
+\end{quote}
+%
+\subsection{考察}
+ここに考察を入力
+
+\section{2.4節 例2}
+
+\subsection{実行結果}
+\label{sec:results4}
+
+\begin{quote}
+\begin{verbatim}
+% ./2_4_2
+-2094914496
+\end{verbatim}
+\end{quote}
+%
+\subsection{考察}
+ここに考察を入力
+
+\section{2.4節 例3}
+
+\subsection{実行結果}
+\label{sec:results5}
+
+\begin{quote}
+\begin{verbatim}
+% ./2_4_3
+5.10064e+11
+\end{verbatim}
+\end{quote}
+%
+\subsection{考察}
+ここに考察を入力
+
+\section{2.7節 例1}
+
+\subsection{実行結果}
+\label{sec:results6}
+
+\begin{quote}
+\begin{verbatim}
+% ./2_7_1
+It is '3.141500'.
+It is '   3.14'.
+It is '3.142  '.
+\end{verbatim}
+\end{quote}
+%
+\subsection{考察}
+ここに考察を入力
+
+\section{2.8節 例1}
+
+\subsection{実行結果}
+\label{sec:results7}
+
+\begin{quote}
+\begin{verbatim}
+% ./2_8_1
+0.001
+5.10064e+11
+
+% ./2_8_1
+1
+5.10065e+14
+\end{verbatim}
+\end{quote}
+%
+\subsection{考察}
+このように、cinを使うことによってterminal上でインタラクティブなコードを記述することができる。ここで、実際のコードは割愛するがdouble d = 0.001;の行をコメントアウトしたコードでは、コンパイル時にdに関してのエラーが発生したため、先に変数を定義することが必要であることが再確認できた。
+
+
+\end{document}
