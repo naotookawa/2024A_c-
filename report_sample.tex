@@ -31,12 +31,12 @@
 % ここから上は（当面は）編集しないでください．
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{レポート第 1 回 \\
-  「レポートの書き方 \&{} C++プログラムの初歩」}
-\author{氏 名： 金井 崇 \\
-        科類・クラス：理科1類3組 \\
-        学生証番号：J0-000000 \\
-        E-mail: kanai@g.ecc.u-tokyo.ac.jp}
+\title{レポート第  回 \\
+  「」}
+\author{氏 名：  大川 尚音 \\
+        科類・クラス：理科1類37組 \\
+        学生証番号：J4-231074 \\
+        E-mail: na-okawa04@g.ecc.u-tokyo.ac.jp}
 \date{\today}
 %
 \begin{document}
@@ -61,12 +61,8 @@
 % \begin{lstlisting}[numbers=left]
 % のようにオプションをつけよ．
 
-\begin{lstlisting}
-#include <iostream>
-using namespace std;
-int main() {
-  cout << "Hello, Yama!" << endl;
-}
+\begin{lstlisting}[numbers=left,numberstyle=\ttfamily,xleftmargin=2zw]
+write your code here!
 \end{lstlisting}
 
 %
@@ -75,65 +71,15 @@ int main() {
 
 \begin{quote}           % 実行結果は \begin{quote} で字下げする
 \begin{verbatim}
-ca10101$ ./a.out
-Hello, Yama!
-ca10101$
+This is a space for terminal.
 \end{verbatim}
 \end{quote}
 %
 \subsection{考察}
 プログラムは，
-\begin{verbatim}
-\begin{lstlisting} ... \end{lstlisting}
-\end{verbatim}
-\ref{sec:prog-list1}節のように listings 環境を使って表示する．なお，
-\begin{verbatim}
-\lstinputlisting{file.cc}
-\end{verbatim}
-とすると，別に作成した file.cc を直接入力して表示させることも可能である．
-
-また，行番号をつけるときは
-\begin{verbatim}
-\begin{lstlisting}[numbers=left,numberstyle=\ttfamily,xleftmargin=2zw]
-\end{verbatim}
-のようにオプションをつけよ（\ref{sec:prog-list2}節を参照のこと）．
-
-実行結果は，\ref{sec:results1}節のように quote 環境と verbatim 環境を使って表示する．
-
-内容については，マウスの左ボタンを使ってカットアンドペーストするのが最も簡単だろう．
+\ref{sec:results1}で引用
 
 %% ここまで %%
 
-\section{課題1 - 例2：和の計算}
-\subsection{プログラムリスト}
-\label{sec:prog-list2}
 
-\begin{lstlisting}[numbers=left,numberstyle=\ttfamily,xleftmargin=2zw]
-#include <iostream>
-using namespace std;
-int main() { /* wa no keisan */
-  int  x, y, ans;
-  cout << "x y -> ";
-  cin >> x >> y;
-  ans = x + y;
-  cout << x << " + " << y << " = " << ans << endl;
-}
-\end{lstlisting}
-%
-\subsection{実行結果}
-\begin{quote}           % 実行結果は \begin{quote} で字下げする
-\begin{verbatim}
-ca10101$ ./a.out
-x y -> 10 20
-10 + 20 = 30
-ca10101$
-\end{verbatim}
-\end{quote}
-%
-\subsection{考察}
-このプログラムは，和の計算をしている．
-キーボードから \texttt{x, y} の2つの変数に値を入力すると，
-それらの和が変数 \texttt{ans} に代入されて，
-最終的に \texttt{x + y = ans} というように表示されている．
-%
 \end{document}
